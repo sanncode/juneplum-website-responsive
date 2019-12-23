@@ -7,15 +7,13 @@ html {
 	font-size: 16px;
 }
 
-body, .container, header, .top-section, .bottom-section, footer {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
 body {
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
 	font-size: 1em;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
 }
 
 .container{
@@ -173,4 +171,14 @@ footer span {
 	text-transform: lowercase;
 	color: #77a466;
 	font-size: 0.875em;
+}
+
+@media all and (min-width:768px) {
+    /* Tablet styles here */
+ 
+}
+ 
+@media all and (min-width:1200px) {
+    /* Desktop styles here */
+ 
 }
