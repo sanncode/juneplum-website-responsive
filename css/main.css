@@ -3,8 +3,8 @@ html {
 }
 
 @font-face{
-	font-family: 'Wisdom Script';
-	src: url('../fonts/wisdom-script.otf') format('opentype');
+	font-family: 'ExquiseFY';
+	src: url('../fonts/ExquiseFY-Regular_M.otf') format('opentype');
 }
 
 body {
@@ -43,11 +43,9 @@ ul {
 	margin: 0;
 }
 
-/*The widths are in a percentage!*/
-
 header {
 	padding-top: 20px;
-	border-bottom: 3px solid #77a466;
+	border-bottom: 3px solid #ff8e31;
     text-align: center;
     width: 100%;
     display: flex;
@@ -56,18 +54,21 @@ header {
 }
 
 header h1 {
-	font-size: 1.875em;
+	font-size: 1.5em;
 	margin: 0;
     padding: 38px 20px 20px 20px; 
-    border-bottom: 3px solid #77a466; 
+    border-bottom: 2px solid #ff8e31; 
     width: 100%;
 }
 header h1 span {
-	color: #77a466;
+	color: #ff8e31;
+	font-family: 'ExquiseFY', cursive;
+	font-weight: bold;
+	font-size: 1.5em;
 }
 
 header nav {
-	padding-bottom: 20px;
+	padding: 20px 0px;
 	width: 100%;
 }
 header nav ul {
@@ -84,11 +85,10 @@ header nav ul li {
 
 header nav ul li a{
 	text-decoration: none;
-	color:#77a466;
+	color:#ff8e31;
 	
 }
 
-/*The widths are in a percentage!*/
 .top-section,
 .bottom-section {
     display: flex;
@@ -99,13 +99,13 @@ header nav ul li a{
 
 .main-image img {
 	width: 100%;
-	border-bottom: 3px solid #77a466;
+	border-bottom: 3px solid #ff8e31;
 }
 
 .main-title h3 {
 	text-align: left;
 	padding: 5px 0;
-	color: #77a466;
+	color: #ff8e31;
 }
 .main-title p {
 	padding: 0;
@@ -123,10 +123,11 @@ header nav ul li a{
 .menu {
 	list-style: none;
 	padding: 0;
+	padding-bottom: 10px;
 }
 .menu li {
 	padding: 10px 0;
-	color:#77a466;
+	color:#ff8e31;
 }
 
 .reviews {
@@ -140,7 +141,6 @@ header nav ul li a{
 	line-height: 24px;
 }
 
-/*The widths are in a percentage!*/
 footer {
 	border-top: 3px solid #eee;
     text-align: center;
@@ -148,18 +148,31 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: row wrap;
+	flex-flow: row wrap;
+	font-size: 0.6875em;
 }
 
 footer span {
-	font-family: 'Wisdom Script', cursive;
+	font-family: 'ExquiseFY', cursive;
 	text-transform: lowercase;
-	color: #77a466;
-	font-size: 0.875em;
+	color: #ff8e31;
+	font-size: 1.5em;
+	line-height: 1.5em;
 }
 
 @media only screen and (min-width:768px) {
 	/* Tablet styles here */
+
+	header h1 {
+		font-size: 1.75em;
+	}
+
+	header nav ul {
+		display: flex;
+    	justify-content: space-evenly;
+    	flex-flow: row nowrap;
+	}
+
 	.bottom-section{
         justify-content: space-between;
         align-items: flex-start;
@@ -177,7 +190,15 @@ footer span {
         border-left: 1px solid #eee;
         border-right: 1px solid #eee;
         padding: 0 20px;
-    }
+	}
+
+	footer {
+		font-size: 1em;
+	}
+
+	footer span {
+		font-size: 1.4em;
+	}
 }
  
 @media only screen and (min-width:1200px) {
@@ -185,17 +206,19 @@ footer span {
 
 	header {
 		justify-content: space-between;	
+		padding-bottom: 10px;
 	}
 
 	header h1 {
-		width: 30%;
-		padding: 0;
+		width: 60%;
+		padding: 0px;
 		border-bottom: none;
 		text-align: left;
 	}
 
 	header nav {
 		width: 40%;
+		padding-top: 5px;
 	}
 
 	header nav ul {
